@@ -1,5 +1,4 @@
 @import "variables";
-@import "~bootstrap/scss/bootstrap";
 
 body {
   background: $bg;
@@ -13,10 +12,12 @@ body {
 
 .schedule {
   //totally fake lines
-  background: repeating-linear-gradient(to right, $gray-500, $bg 1px, $bg 0, $bg 250px);
+  background: repeating-linear-gradient(to right, $border-color, $bg 1px, $bg 0, $bg 250px);
   margin: $spacer;
   padding: $spacer-card * 2;
   height: 100%;
+  border: 1px solid $border-color;
+  width: 2500px;
 }
 
 .navbar {

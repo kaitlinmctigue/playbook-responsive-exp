@@ -2,6 +2,10 @@
 
 
 .EventsRow {
+  margin: 0 -16px $spacer-card;
+  padding: 0 16px;
+  border-bottom: 1px solid $border-color;
+
   .row {
     //margin: $spacer-card (-1* $spacer-card);
     flex-wrap: nowrap;
