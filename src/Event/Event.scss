@@ -3,12 +3,12 @@
 .event {
   font-family: $font;
   color: $card-text;
-  padding: $spacer-card;
+  padding: ($spacer-card/2) $spacer-card;
   border-radius: $rounded;
   border: 1px solid;
   font-size: $font-size;
   background: #333;
-  //margin-right: $spacer-card;
+  overflow: hidden;
   cursor: pointer;
   height: 100%;
 

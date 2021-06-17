@@ -1,16 +1,28 @@
 @import "../styles/variables";
 
+$row-height-default: 75px;
 
 .EventsRow {
   margin: 0 -16px $spacer-card;
   padding: 0 16px;
   border-bottom: 1px solid $border-color;
+  height: $row-height-default;
 
   .row {
     //margin: $spacer-card (-1* $spacer-card);
     flex-wrap: nowrap;
     height: 100%;
     align-items: stretch;
+
+    .col {
+      .row{
+        max-height: calc(50% + #{$spacer-card});
+        margin-left: -10px;
+        .col {
+          margin-right: $spacer-card;
+        }
+      }
+    }
   }
 
   .col {

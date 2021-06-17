@@ -10,14 +10,14 @@ const EventsRow = () => (
       <Row>
           <Event color={'green'}/>
           <Event color={'red'} width={'250px'}/>
-          {/*<Col>*/}
-              {/*<Row>*/}
-                  {/*<Event color={'blue'} width={'500px'}/>*/}
-              {/*</Row>*/}
-              {/*<Row>*/}
-                  {/*<Event color={'blue'} width={'250px'}/>*/}
-              {/*</Row>*/}
-          {/*</Col>*/}
+          <Col>
+              <Row>
+                  <Event color={'blue'} width={'500px'}/>
+              </Row>
+              <Row>
+                  <Event color={'blue'} width={'250px'}/>
+              </Row>
+          </Col>
           <Event color={'green'} width={'500px'}/>
           <Event color={'red'} width={'500px'}/>
           <Event color={'blue'} width={'500px'}/>
