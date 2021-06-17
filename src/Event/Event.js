@@ -7,8 +7,12 @@ import Col from 'react-bootstrap/Col';
 class Event extends Component {
     render() {
         return (
-            <Col style={
-                {maxWidth: this.props.width, width: this.props.width, minWidth: this.props.width}}>
+            <Col style={{
+                maxWidth: this.props.width,
+                width: this.props.width,
+                minWidth: this.props.width,
+                height: this.props.height
+            }}>
                 <div className={'event ' + this.props.color}>
                     <div className={'title'}>
                         Title
@@ -29,12 +33,14 @@ class Event extends Component {
 
 Event.propTypes = {
     color: PropTypes.string,
-    width: PropTypes.string
+    width: PropTypes.string,
+    height: PropTypes.string
 };
 
 Event.defaultProps = {
     color: 'green',
-    width: '500px'
+    width: '500px',
+    height: '100%'
 };
 
 export default Event;

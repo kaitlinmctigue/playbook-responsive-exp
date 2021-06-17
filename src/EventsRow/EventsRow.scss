@@ -16,12 +16,19 @@ $row-height-default: 75px;
 
     .col {
       .row{
-        max-height: calc(50% + #{$spacer-card});
         margin-left: -10px;
-        .col {
+        .col:last-of-type {
           margin-right: $spacer-card;
         }
       }
+    }
+
+    .one-half {
+      max-height: 50%;
+    }
+
+    .one-third {
+      max-height: 33.33%;
     }
   }
 

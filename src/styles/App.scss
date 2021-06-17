@@ -8,6 +8,7 @@ body {
   font: $font;
   background: $bg;
   height: 100%;
+  padding-top: 75px;
 }
 
 .schedule {
@@ -22,4 +23,5 @@ body {
 
 .navbar {
   background: $bg;
+  margin-bottom: $spacer;
 }

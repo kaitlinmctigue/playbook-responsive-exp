@@ -51,3 +51,10 @@
 .blue {
   @include card($blue);
 }
+
+.hidden {
+  background: transparent;
+  color: transparent;
+  visibility: hidden;
+  opacity: 0;
+}

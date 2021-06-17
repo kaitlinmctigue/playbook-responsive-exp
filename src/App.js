@@ -1,42 +1,41 @@
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 import './styles/App.scss';
-import Container from 'react-bootstrap/Container';
-import EventsRow from './EventsRow/EventsRow';
+
+import RowsVerticallyResponsive from './RowsVerticallyResponsive/RowsVerticallyResponsive';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Router>
+          <header className="App-header">
 
-          <Navbar expand="lg">
-              <Navbar.Brand href="#home">Playbook Playground</Navbar.Brand>
-              {/*<Navbar.Toggle aria-controls="basic-navbar-nav" />*/}
-              {/*<Navbar.Collapse id="basic-navbar-nav">*/}
-                  {/*<Nav className="mr-auto">*/}
-                      {/*<Nav.Link href="#home">Home</Nav.Link>*/}
-                      {/*<Nav.Link href="#link">Link</Nav.Link>*/}
-                      {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
-                          {/*<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>*/}
-                          {/*<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>*/}
-                          {/*<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/}
-                          {/*<NavDropdown.Divider />*/}
-                          {/*<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>*/}
-                      {/*</NavDropdown>*/}
-                  {/*</Nav>*/}
-                  {/*<Form inline>*/}
-                      {/*<FormControl type="text" placeholder="Search" className="mr-sm-2" />*/}
-                      {/*<Button variant="outline-success">Search</Button>*/}
-                  {/*</Form>*/}
-              {/*</Navbar.Collapse>*/}
-          </Navbar>
+              <Navbar fixed="top" expand="lg">
+                  <Navbar.Brand href="#home">Playbook Playground</Navbar.Brand>
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="basic-navbar-nav">
+                      <Nav className="mr-auto">
+                          <Nav.Link href="/vert">Vertically Responsive</Nav.Link>
+                          <Nav.Link href="/test">Test</Nav.Link>
+                      </Nav>
+                  </Navbar.Collapse>
+              </Navbar>
 
-      </header>
+          </header>
 
-        <div className={'schedule'}>
-            <EventsRow />
-            {/*<EventsRow />*/}
-            {/*<EventsRow />*/}
-        </div>
+          <Switch>
+              <Route exact path="/vert">
+                  <RowsVerticallyResponsive/>
+              </Route>
+          </Switch>
+
+      </Router>
     </div>
   );
 }

@@ -5,28 +5,147 @@ import Event from '../Event/Event';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const EventsRow = () => (
-  <div className="EventsRow">
-      <Row>
-          <Event color={'green'}/>
-          <Event color={'red'} width={'250px'}/>
-          <Col>
-              <Row>
-                  <Event color={'blue'} width={'500px'}/>
-              </Row>
-              <Row>
-                  <Event color={'blue'} width={'250px'}/>
-              </Row>
-          </Col>
-          <Event color={'green'} width={'500px'}/>
-          <Event color={'red'} width={'500px'}/>
-          <Event color={'blue'} width={'500px'}/>
-      </Row>
-  </div>
-);
+class EventsRow extends React.Component {
+    render() {
 
-EventsRow.propTypes = {};
+        //TYPE 1
+        if (this.props.type == 1) {
+            return (
+                <div className="EventsRow" style={{height: (this.props.height + 'px')}}>
+                    <Row>
+                        <Event color={'green'}/>
+                        <Event color={'red'} width={'250px'}/>
+                        <Col>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'250px'}/>
+                                <Event color={'green'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'green'} width={'500px'}/>
+                        <Event color={'red'} width={'500px'}/>
+                        <Col>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'blue'} width={'500px'}/>
+                        <Col>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                        </Col>
+                    </Row>
+                </div>
+            )
+        }
+        else if (this.props.type == 2) {
+            return (
+                <div className="EventsRow" style={{height: (this.props.height + 'px')}}>
+                    <Row>
+                        <Event color={'blue'}/>
+                        <Col>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-third">
+                                <Event color={'red'} width={'250px'}/>
+                            </Row>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'hidden'} width={'250px'}/>
+                        <Col>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'250px'}/>
+                                <Event color={'green'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'green'} width={'500px'}/>
+                        <Event color={'red'} width={'500px'}/>
+                        <Col>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'blue'} width={'500px'}/>
 
-EventsRow.defaultProps = {};
+                    </Row>
+                </div>
+            )
+        }
+        else {
+            return (
+                <div className="EventsRow" style={{height: (this.props.height + 'px')}}>
+                    <Row>
+                        <Event color={'red'}/>
+                        <Col>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-third">
+                                <Event color={'hidden'} width={'250px'}/>
+                                <Event color={'green'} width={'250px'}/>
+                            </Row>
+                            <Row className="one-third">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'red'} width={'250px'}/>
+                        <Col>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'250px'}/>
+                                <Event color={'green'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'green'} width={'500px'}/>
+                        <Event color={'red'} width={'500px'}/>
+                        <Col>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'500px'}/>
+                            </Row>
+                            <Row className="one-half">
+                                <Event color={'blue'} width={'250px'}/>
+                            </Row>
+                        </Col>
+                        <Event color={'blue'} width={'500px'}/>
+
+                    </Row>
+                </div>
+            )
+        }
+    }
+}
+
+EventsRow.propTypes = {
+    height: PropTypes.number,
+    type: PropTypes.number
+};
+
+EventsRow.defaultProps = {
+    height: 175,
+    type: 1
+};
 
 export default EventsRow;
