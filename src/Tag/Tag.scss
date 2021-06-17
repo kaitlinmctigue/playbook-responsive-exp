@@ -1,0 +1,10 @@
+@import "../styles/variables";
+
+.Tag {
+  border-radius: $rounded;
+  width: 20px;
+  text-align: center;
+  display: inline-block;
+  min-width: 25px;
+  margin: 0 5px 0 0;
+}

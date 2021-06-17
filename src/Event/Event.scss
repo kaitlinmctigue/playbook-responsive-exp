@@ -1,0 +1,53 @@
+@import "../styles/variables";
+
+.event {
+  font-family: $font;
+  color: $card-text;
+  padding: $spacer-card;
+  border-radius: $rounded;
+  border: 1px solid;
+  font-size: $font-size;
+  background: #333;
+  //margin-right: $spacer-card;
+  cursor: pointer;
+  height: 100%;
+
+  .title{
+    font-weight: bold;
+    font-size: $font-size;
+  }
+
+  .desc {
+    font-size: ($font-size * .9);
+    //max-height: 50px;
+    overflow: hidden;
+  }
+
+  .actions {
+    margin-top: $spacer-card;
+    .Tag {
+      border-radius: $rounded;
+    }
+  }
+}
+
+@mixin card($color) {
+  background: $color;
+  border-color: darken($color, 15%);
+
+  .Tag {
+    background: darken($color, 10%);;
+  }
+}
+
+.green {
+  @include card($green);
+}
+
+.red {
+  @include card($red);
+}
+
+.blue {
+  @include card($blue);
+}

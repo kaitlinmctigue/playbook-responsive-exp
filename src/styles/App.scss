@@ -1,0 +1,24 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background: $bg;
+}
+
+.App {
+  font: $font;
+  background: $bg;
+  height: 100%;
+}
+
+.schedule {
+  //totally fake lines
+  background: repeating-linear-gradient(to right, $gray-500, $bg 1px, $bg 0, $bg 250px);
+  margin: $spacer;
+  padding: $spacer-card * 2;
+  height: 100%;
+}
+
+.navbar {
+  background: $bg;
+}

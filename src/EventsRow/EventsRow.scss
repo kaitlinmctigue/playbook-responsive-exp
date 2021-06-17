@@ -1,0 +1,17 @@
+@import "../styles/variables";
+
+
+.EventsRow {
+  .row {
+    //margin: $spacer-card (-1* $spacer-card);
+    flex-wrap: nowrap;
+    height: 100%;
+    align-items: stretch;
+  }
+
+  .col {
+    //margin: 0;
+    padding: 0 $spacer-card $spacer-card $spacer-card;
+    height: 100%;
+  }
+}
