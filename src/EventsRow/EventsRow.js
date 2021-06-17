@@ -6,12 +6,29 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 class EventsRow extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {rowHeight: this.props.height};
+
+        this.updateProps = this.updateProps.bind(this);
+    }
+
+    componentDidUpdate() {
+        this.updateProps();
+    }
+
+    updateProps() {
+        // this.setState({rowHeight: this.props.height});
+        console.log(this.state.rowHeight);
+    }
+
     render() {
 
         //TYPE 1
         if (this.props.type == 1) {
             return (
-                <div className="EventsRow" style={{height: (this.props.height + 'px')}}>
+                <div className="EventsRow" style={{height: (this.state.rowHeight + 'px')}}>
                     <Row>
                         <Event color={'green'}/>
                         <Event color={'red'} width={'250px'}/>
@@ -52,7 +69,7 @@ class EventsRow extends React.Component {
         }
         else if (this.props.type == 2) {
             return (
-                <div className="EventsRow" style={{height: (this.props.height + 'px')}}>
+                <div className="EventsRow" style={{height: (this.state.rowHeight + 'px')}}>
                     <Row>
                         <Event color={'blue'}/>
                         <Col>
@@ -94,7 +111,7 @@ class EventsRow extends React.Component {
         }
         else {
             return (
-                <div className="EventsRow" style={{height: (this.props.height + 'px')}}>
+                <div className="EventsRow" style={{height: (this.state.rowHeight + 'px')}}>
                     <Row>
                         <Event color={'red'}/>
                         <Col>

@@ -17,23 +17,28 @@ function App() {
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
-                  <Navbar.Brand href="#home">Playbook Playground</Navbar.Brand>
+                  <Navbar.Brand href="/playbook-responsive-exp/vertical">Playbook Playground</Navbar.Brand>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto">
-                          <Nav.Link href="/vert">Vertically Responsive</Nav.Link>
-                          <Nav.Link href="/test">Test</Nav.Link>
+                          <Nav.Link href="/playbook-responsive-exp/vertical">Vertically Responsive</Nav.Link>
+                          <Nav.Link href="/playbook-responsive-exp/test">Test</Nav.Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
 
           </header>
 
-          <Switch>
-              <Route exact path="/vert">
-                  <RowsVerticallyResponsive/>
-              </Route>
-          </Switch>
+          <RowsVerticallyResponsive/>
+
+          {/*<Switch>*/}
+              {/*<Route exact path="/playbook-responsive-exp/vertical">*/}
+                  {/*<RowsVerticallyResponsive/>*/}
+              {/*</Route>*/}
+              {/*<Route exact path="/playbook-responsive-exp/test">*/}
+                  {/*other options*/}
+              {/*</Route>*/}
+          {/*</Switch>*/}
 
       </Router>
     </div>
