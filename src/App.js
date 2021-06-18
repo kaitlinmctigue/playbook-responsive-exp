@@ -13,7 +13,7 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
   return (
     <div className="App">
-      <Router basename={'/'}>
+      <Router basename={process.env.PUBLIC_URL}>
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
@@ -21,8 +21,8 @@ function App() {
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto">
-                          <Nav.Link href={process.env.PUBLIC_URL + '/'}>Vertically Responsive</Nav.Link>
-                          <Nav.Link href={process.env.PUBLIC_URL + '/test'}>Test</Nav.Link>
+                          <Nav.Link href="/">Vertically Responsive</Nav.Link>
+                          <Nav.Link href="/test">Test</Nav.Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -32,10 +32,10 @@ function App() {
           {/*<RowsVerticallyResponsive/>*/}
 
           <Switch>
-              <Route exact path={process.env.PUBLIC_URL + '/'}>
+              <Route exact path="/">
                   <RowsVerticallyResponsive/>
               </Route>
-              <Route exact path={process.env.PUBLIC_URL + '/test'}>
+              <Route exact path="/test">
                   other options
               </Route>
           </Switch>
