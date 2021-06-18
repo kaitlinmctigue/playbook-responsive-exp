@@ -13,7 +13,7 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL + '/playbook-responsive-exp/'}>
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
