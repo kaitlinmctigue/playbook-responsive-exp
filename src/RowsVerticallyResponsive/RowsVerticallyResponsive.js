@@ -58,6 +58,14 @@ class RowsVerticallyResponsive extends React.Component {
                     <EventsRow height={this.state.rowSize} type={2} />
                     <EventsRow height={this.state.rowSize} type={1} />
                     <EventsRow height={this.state.rowSize} type={3} />
+                    <EventsRow height={this.state.rowSize} type={2} />
+                    <EventsRow height={this.state.rowSize} type={3} />
+                    <EventsRow height={this.state.rowSize} type={1} />
+                    <EventsRow height={this.state.rowSize} type={1} />
+                    <EventsRow height={this.state.rowSize} type={2} />
+                    <EventsRow height={this.state.rowSize} type={1} />
+                    <EventsRow height={this.state.rowSize} type={3} />
+                    <EventsRow height={this.state.rowSize} type={2} />
                     <EventsRow height={this.state.rowSize} type={3} />
                     <EventsRow height={this.state.rowSize} type={1} />
 

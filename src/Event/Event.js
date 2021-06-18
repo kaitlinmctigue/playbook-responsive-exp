@@ -18,13 +18,13 @@ class Event extends Component {
                         Title
                     </div>
                     <div className={'desc'}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tempus nunc, ac tristique augue. Vestibulum sagittis dolor et lectus elementum, in suscipit risus dignissim.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tempus nunc, ac tristique augue. Vestibulum sagittis dolor et lectus elementum.
                     </div>
-                    {/*<div className={'actions'}>*/}
-                        {/*<Tag />*/}
-                        {/*<Tag />*/}
-                        {/*<Tag />*/}
-                    {/*</div>*/}
+                    <div className={'actions'}>
+                        <Tag />
+                        <Tag />
+                        <Tag />
+                    </div>
                 </div>
             </Col>
         )
