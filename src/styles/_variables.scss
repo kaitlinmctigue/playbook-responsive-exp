@@ -13,5 +13,6 @@ $green: #6DB872;
 $red: #F46850;
 $blue: #79B4FB;
 $card-text: #fff;
+$card-text-secondary: transparentize($card-text, .1);
 
 $border-color: $gray-500;
