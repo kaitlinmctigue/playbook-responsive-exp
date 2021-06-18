@@ -13,7 +13,7 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
   return (
     <div className="App">
-      <Router basename={'/'}>
+      <Router basename={process.env.PUBLIC_URL}>
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
