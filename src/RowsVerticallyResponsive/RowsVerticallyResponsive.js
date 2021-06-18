@@ -16,7 +16,7 @@ class RowsVerticallyResponsive extends React.Component {
         this.renderRows = this.renderRows.bind(this);
     }
 
-    renderRows(count) {
+    renderRows(count, height) {
         var rowType = 1;
         var rows = [];
 
@@ -33,6 +33,7 @@ class RowsVerticallyResponsive extends React.Component {
     changeRowSize(size) {
         console.log(size);
         this.setState({rowSize: size});
+        console.log('RowsVerticallyResponsive.state.rowSize = ' + this.state.rowSize);
     }
 
     render() {
@@ -46,14 +47,22 @@ class RowsVerticallyResponsive extends React.Component {
                         title={'Row Height: ' + this.state.rowSize + 'px'}
                         id="dropdown-menu"
                     >
-                        <Dropdown.Item onSelect={()=> this.changeRowSize(75)} eventKey="1">Small</Dropdown.Item>
+                        <Dropdown.Item onSelect={()=> this.changeRowSize(75)} eventKey="1">Small (75px)</Dropdown.Item>
                         <Dropdown.Item onSelect={()=> this.changeRowSize(100)} eventKey="2">Medium (100px)</Dropdown.Item>
-                        <Dropdown.Item onSelect={()=> this.changeRowSize(150)} eventKey="3">Large</Dropdown.Item>
+                        <Dropdown.Item onSelect={()=> this.changeRowSize(150)} eventKey="3">Large (150px)</Dropdown.Item>
+                        <Dropdown.Item onSelect={()=> this.changeRowSize(175)} eventKey="3">Extra Large (175px)</Dropdown.Item>
                     </DropdownButton>
                 </Container>
                 <div className={'schedule'}>
-                    {/*<EventsRow height={this.rowSize} type={1} />*/}
-                    {this.renderRows(25)}
+                    <EventsRow height={this.state.rowSize} type={1} />
+                    <EventsRow height={this.state.rowSize} type={2} />
+                    <EventsRow height={this.state.rowSize} type={1} />
+                    <EventsRow height={this.state.rowSize} type={3} />
+                    <EventsRow height={this.state.rowSize} type={3} />
+                    <EventsRow height={this.state.rowSize} type={1} />
+
+
+                    {/*{this.renderRows(25, this.state.rowSize)}*/}
                 </div>
             </div>
         );

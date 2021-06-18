@@ -19,8 +19,13 @@ class EventsRow extends React.Component {
     }
 
     updateProps() {
-        // this.setState({rowHeight: this.props.height});
-        console.log(this.state.rowHeight);
+        console.log('EventsRow.state.rowSize = ' + this.state.rowHeight);
+        console.log('EventsRow.props.height = ' + this.props.height);
+        if(this.state.rowHeight != this.props.height) {
+            this.setState({rowHeight: this.props.height});
+            console.log('EventsRow.state.rowSize = ' + this.state.rowHeight);
+        }
+
     }
 
     render() {
