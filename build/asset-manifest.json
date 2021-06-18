@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/playbook-responsive-exp/static/css/main.b224a826.chunk.css",
-    "main.js": "/playbook-responsive-exp/static/js/main.88b49433.chunk.js",
-    "main.js.map": "/playbook-responsive-exp/static/js/main.88b49433.chunk.js.map",
+    "main.js": "/playbook-responsive-exp/static/js/main.e3315f0a.chunk.js",
+    "main.js.map": "/playbook-responsive-exp/static/js/main.e3315f0a.chunk.js.map",
     "runtime-main.js": "/playbook-responsive-exp/static/js/runtime-main.c4b58087.js",
     "runtime-main.js.map": "/playbook-responsive-exp/static/js/runtime-main.c4b58087.js.map",
     "static/js/2.6d75c32a.chunk.js": "/playbook-responsive-exp/static/js/2.6d75c32a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c4b58087.js",
     "static/js/2.6d75c32a.chunk.js",
     "static/css/main.b224a826.chunk.css",
-    "static/js/main.88b49433.chunk.js"
+    "static/js/main.e3315f0a.chunk.js"
   ]
 }
