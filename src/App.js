@@ -13,32 +13,32 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={'/'}>
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
-                  <Navbar.Brand href="/playbook-responsive-exp/vertical">Playbook Playground</Navbar.Brand>
+                  <Navbar.Brand>Playbook Playground</Navbar.Brand>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto">
-                          <Nav.Link href="/playbook-responsive-exp/vertical">Vertically Responsive</Nav.Link>
-                          <Nav.Link href="/playbook-responsive-exp/test">Test</Nav.Link>
+                          <Nav.Link href="/">Vertically Responsive</Nav.Link>
+                          <Nav.Link href="/test">Test</Nav.Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
 
           </header>
 
-          <RowsVerticallyResponsive/>
+          {/*<RowsVerticallyResponsive/>*/}
 
-          {/*<Switch>*/}
-              {/*<Route exact path="/playbook-responsive-exp/vertical">*/}
-                  {/*<RowsVerticallyResponsive/>*/}
-              {/*</Route>*/}
-              {/*<Route exact path="/playbook-responsive-exp/test">*/}
-                  {/*other options*/}
-              {/*</Route>*/}
-          {/*</Switch>*/}
+          <Switch>
+              <Route exact path="/">
+                  <RowsVerticallyResponsive/>
+              </Route>
+              <Route exact path="/test">
+                  other options
+              </Route>
+          </Switch>
 
       </Router>
     </div>
