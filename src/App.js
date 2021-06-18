@@ -1,9 +1,5 @@
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
+
 import './styles/App.scss';
 
 import RowsVerticallyResponsive from './RowsVerticallyResponsive/RowsVerticallyResponsive';
@@ -13,7 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
@@ -40,7 +36,7 @@ function App() {
               </Route>
           </Switch>
 
-      </Router>
+      </HashRouter>
     </div>
   );
 }
