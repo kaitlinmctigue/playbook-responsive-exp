@@ -1,4 +1,4 @@
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 import './styles/App.scss';
 
@@ -9,7 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
   return (
     <div className="App">
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <Router basename='/'>
           <header className="App-header">
 
               <Navbar fixed="top" expand="lg">
@@ -17,8 +17,8 @@ function App() {
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto">
-                          <Nav.Link href="/">Vertically Responsive</Nav.Link>
-                          <Nav.Link href="/test">Test</Nav.Link>
+                          {/*<Nav.Link href="/">Vertically Responsive</Nav.Link>*/}
+                          {/*<Nav.Link href="/test">Test</Nav.Link>*/}
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -27,16 +27,14 @@ function App() {
 
           {/*<RowsVerticallyResponsive/>*/}
 
-          <Switch>
-              <Route exact path="/">
-                  <RowsVerticallyResponsive/>
-              </Route>
-              <Route exact path="/test">
-                  other options
-              </Route>
-          </Switch>
+          <Route exact path="/">
+              <RowsVerticallyResponsive/>
+          </Route>
+          <Route path="/test">
+              other options
+          </Route>
 
-      </HashRouter>
+      </Router>
     </div>
   );
 }

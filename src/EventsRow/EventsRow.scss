@@ -8,6 +8,13 @@ $row-height-default: 75px;
   border-bottom: 1px solid $border-color;
   height: $row-height-default;
 
+  //on smaller rows, hide little action buttons / tags
+  &.simplified {
+    .desc, .actions {
+      display: none;
+    }
+  }
+
   .row {
     //margin: $spacer-card (-1* $spacer-card);
     flex-wrap: nowrap;
