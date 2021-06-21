@@ -38,6 +38,7 @@ class EventsRow extends React.Component {
                 <div className={'EventsRow ' + ((this.state.rowHeight <= this.smallRowHeight) ? 'simplified' : '')  }
                      style={{height: (this.state.rowHeight + 'px')}}>
                     <Row>
+                        <div className={'row-name'}/>
                         <Event color={'green'}/>
                         <Event color={'red'} width={'250px'}/>
                         <Col>
@@ -80,16 +81,15 @@ class EventsRow extends React.Component {
                 <div className={'EventsRow ' + ((this.state.rowHeight <= this.smallRowHeight) ? 'simplified' : '')  }
                      style={{height: (this.state.rowHeight + 'px')}}>
                     <Row>
+                        <div className={'row-name'}/>
                         <Event color={'blue'}/>
                         <Col>
-                            <Row className="one-third">
+                            <Row className="one-half">
                                 <Event color={'blue'} width={'500px'}/>
                             </Row>
-                            <Row className="one-third">
-                                <Event color={'red'} width={'250px'}/>
-                            </Row>
-                            <Row className="one-third">
+                            <Row className="one-half">
                                 <Event color={'blue'} width={'250px'}/>
+                                <Event color={'green'} width={'250px'}/>
                             </Row>
                         </Col>
                         <Event color={'hidden'} width={'250px'}/>
@@ -118,11 +118,12 @@ class EventsRow extends React.Component {
                 </div>
             )
         }
-        else {
+        else if (this.props.type == 3) {
             return (
                 <div className={'EventsRow ' + ((this.state.rowHeight <= this.smallRowHeight) ? 'simplified' : '')  }
                      style={{height: (this.state.rowHeight + 'px')}}>
                     <Row>
+                        <div className={'row-name'}/>
                         <Event color={'red'}/>
                         <Col>
                             <Row className="one-third">
@@ -162,6 +163,24 @@ class EventsRow extends React.Component {
                 </div>
             )
         }
+        else {
+            return (
+                <div className={'EventsRow ' + ((this.state.rowHeight <= this.smallRowHeight) ? 'simplified' : '')  }
+                     style={{height: (this.state.rowHeight + 'px')}}>
+                    <Row>
+                        <div className={'row-name'}/>
+                        <Event color={'red'}/>
+                        <Event color={'blue'} width={'500px'}/>
+                        <Event color={'blue'} width={'500px'}/>
+                        <Event color={'red'} width={'250px'}/>
+                        <Event color={'green'} width={'500px'}/>
+                        <Event color={'red'} width={'500px'}/>
+                        <Event color={'blue'} width={'500px'}/>
+
+                    </Row>
+                </div>
+            )
+        }
     }
 }
 
@@ -171,7 +190,6 @@ EventsRow.propTypes = {
 };
 
 EventsRow.defaultProps = {
-    height: 175,
     type: 1
 };
 

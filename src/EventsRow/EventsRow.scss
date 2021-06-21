@@ -1,12 +1,26 @@
 @import "../styles/variables";
 
-$row-height-default: 75px;
+$row-height-default: auto;
 
 .EventsRow {
   margin: 0 -16px $spacer-card;
   padding: 0 16px;
   border-bottom: 1px solid $border-color;
   height: $row-height-default;
+
+  .row-name {
+    padding: $spacer-card;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 250px;
+    min-width: 250px;
+
+    &:before {
+      content: 'rowName';
+      display: inline-block;
+    }
+  }
 
   //on smaller rows, hide little action buttons / tags
   &.simplified {

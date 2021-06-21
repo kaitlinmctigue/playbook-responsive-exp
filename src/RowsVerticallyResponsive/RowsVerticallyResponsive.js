@@ -41,7 +41,7 @@ class RowsVerticallyResponsive extends React.Component {
             <div className="RowsVerticallyResponsive">
                 <Container fluid>
                     <p>
-                        Vertically Responsive rows
+                        Rows with dropdown to change height
                     </p>
                     <DropdownButton
                         title={'Row Height: ' + this.state.rowSize + 'px'}
@@ -56,18 +56,20 @@ class RowsVerticallyResponsive extends React.Component {
                 <div className={'schedule'}>
                     <EventsRow height={this.state.rowSize} type={1} />
                     <EventsRow height={this.state.rowSize} type={2} />
+                    <EventsRow height={this.state.rowSize} type={4} />
                     <EventsRow height={this.state.rowSize} type={1} />
                     <EventsRow height={this.state.rowSize} type={3} />
                     <EventsRow height={this.state.rowSize} type={2} />
                     <EventsRow height={this.state.rowSize} type={3} />
-                    <EventsRow height={this.state.rowSize} type={1} />
-                    <EventsRow height={this.state.rowSize} type={1} />
-                    <EventsRow height={this.state.rowSize} type={2} />
-                    <EventsRow height={this.state.rowSize} type={1} />
-                    <EventsRow height={this.state.rowSize} type={3} />
-                    <EventsRow height={this.state.rowSize} type={2} />
-                    <EventsRow height={this.state.rowSize} type={3} />
-                    <EventsRow height={this.state.rowSize} type={1} />
+                    <EventsRow height={this.state.rowSize} type={4} />
+                    {/*<EventsRow height={this.state.rowSize} type={1} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={1} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={2} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={1} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={3} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={2} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={3} />*/}
+                    {/*<EventsRow height={this.state.rowSize} type={1} />*/}
 
 
                     {/*{this.renderRows(25, this.state.rowSize)}*/}

@@ -1,0 +1,22 @@
+.RowsWithEventsFixedHeight {
+  .EventsRow {
+    height: auto;
+
+    .event {
+      //height: 65px;
+      //max-height: 65px;
+
+      .desc {
+        max-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-wrap: nowrap;
+      }
+
+      .actions {
+        margin-bottom: .25em;
+      }
+    }
+  }
+
+}
