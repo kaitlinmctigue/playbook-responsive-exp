@@ -7,10 +7,11 @@
       //max-height: 65px;
 
       .desc {
+        //truncate with ellipsis
         max-height: 16px;
         overflow: hidden;
         text-overflow: ellipsis;
-        flex-wrap: nowrap;
+        white-space: nowrap;
       }
 
       .actions {
