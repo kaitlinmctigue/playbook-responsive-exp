@@ -33,7 +33,7 @@ class RowsWithEventsFixedHeight extends React.Component {
             <div className="RowsWithEventsFixedHeight">
                 <Container fluid>
                     <p>
-                        Auto height rows with fixed height events
+                        Auto-height rows with fixed-height events
                     </p>
                 </Container>
                 <div className={'schedule'}>

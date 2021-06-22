@@ -1,7 +1,31 @@
 .VerticallyResponsiveForReal {
-  margin-top: 50px;
+
+  $margin-on-nested: 25px;
+
   .EventsRow {
     height: auto;
+
+    .one-half, .one-third {
+      height: 100%;
+      max-height: 100%;
+      position: absolute;
+
+      &:nth-of-type(2) {
+        z-index: 10;
+        top: $margin-on-nested;
+        height: calc(100% - #{$margin-on-nested});
+      }
+
+      &:nth-of-type(3) {
+        z-index: 20;
+        top: $margin-on-nested * 2;
+        height: calc(100% - #{$margin-on-nested * 2});
+      }
+
+      .col {
+        //padding-bottom: 0;
+      }
+    }
 
     .event {
       //height: 65px;
