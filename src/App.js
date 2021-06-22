@@ -21,17 +21,23 @@ function App() {
                           {/*<Nav.Link href="/">Custom Height</Nav.Link>*/}
                           {/*<Nav.Link href="/test/">Fixed Event Height</Nav.Link>*/}
                       {/*</Nav>*/}
+                      <Nav>
+                          <Link to={'/'}>Custom Height</Link>
+                      </Nav>
+                      <Nav>
+                          <Link to={'/test'}>Fixed Event Height</Link>
+                      </Nav>
                   </Navbar.Collapse>
               </Navbar>
 
           </header>
 
           {/*on the same page for now - not using routing*/}
-          <RowsVerticallyResponsive/>
-          <RowsWithEventsFixedHeight/>
+          {/*<RowsVerticallyResponsive/>*/}
+          {/*<RowsWithEventsFixedHeight/>*/}
 
-          {/*<Route exact path="/" component={RowsVerticallyResponsive} />*/}
-          {/*<Route path="/" component={RowsWithEventsFixedHeight} />*/}
+          <Route exact path="/" component={RowsVerticallyResponsive} />
+          <Route path="/test" component={RowsWithEventsFixedHeight} />
 
       </Router>
     </div>

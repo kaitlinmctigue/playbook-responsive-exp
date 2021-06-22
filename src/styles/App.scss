@@ -25,4 +25,9 @@ body {
 .navbar {
   background: $bg;
   margin-bottom: $spacer;
+
+  .navbar-nav {
+    padding: $spacer-card;
+    margin-left: $spacer-card;
+  }
 }
