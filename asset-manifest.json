@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/playbook-responsive-exp/static/css/main.6dd757a9.chunk.css",
-    "main.js": "/playbook-responsive-exp/static/js/main.ae935200.chunk.js",
-    "main.js.map": "/playbook-responsive-exp/static/js/main.ae935200.chunk.js.map",
-    "runtime-main.js": "/playbook-responsive-exp/static/js/runtime-main.e75405f1.js",
-    "runtime-main.js.map": "/playbook-responsive-exp/static/js/runtime-main.e75405f1.js.map",
-    "static/js/2.f48352ff.chunk.js": "/playbook-responsive-exp/static/js/2.f48352ff.chunk.js",
-    "static/js/2.f48352ff.chunk.js.map": "/playbook-responsive-exp/static/js/2.f48352ff.chunk.js.map",
-    "static/js/3.bc9b3e7e.chunk.js": "/playbook-responsive-exp/static/js/3.bc9b3e7e.chunk.js",
-    "static/js/3.bc9b3e7e.chunk.js.map": "/playbook-responsive-exp/static/js/3.bc9b3e7e.chunk.js.map",
+    "main.css": "/playbook-responsive-exp/static/css/main.ccb22964.chunk.css",
+    "main.js": "/playbook-responsive-exp/static/js/main.c19fd304.chunk.js",
+    "main.js.map": "/playbook-responsive-exp/static/js/main.c19fd304.chunk.js.map",
+    "runtime-main.js": "/playbook-responsive-exp/static/js/runtime-main.b64e34f7.js",
+    "runtime-main.js.map": "/playbook-responsive-exp/static/js/runtime-main.b64e34f7.js.map",
+    "static/js/2.e1d07fa1.chunk.js": "/playbook-responsive-exp/static/js/2.e1d07fa1.chunk.js",
+    "static/js/2.e1d07fa1.chunk.js.map": "/playbook-responsive-exp/static/js/2.e1d07fa1.chunk.js.map",
+    "static/js/3.f4382851.chunk.js": "/playbook-responsive-exp/static/js/3.f4382851.chunk.js",
+    "static/js/3.f4382851.chunk.js.map": "/playbook-responsive-exp/static/js/3.f4382851.chunk.js.map",
     "index.html": "/playbook-responsive-exp/index.html",
-    "static/css/main.6dd757a9.chunk.css.map": "/playbook-responsive-exp/static/css/main.6dd757a9.chunk.css.map",
-    "static/js/2.f48352ff.chunk.js.LICENSE.txt": "/playbook-responsive-exp/static/js/2.f48352ff.chunk.js.LICENSE.txt"
+    "static/css/main.ccb22964.chunk.css.map": "/playbook-responsive-exp/static/css/main.ccb22964.chunk.css.map",
+    "static/js/2.e1d07fa1.chunk.js.LICENSE.txt": "/playbook-responsive-exp/static/js/2.e1d07fa1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e75405f1.js",
-    "static/js/2.f48352ff.chunk.js",
-    "static/css/main.6dd757a9.chunk.css",
-    "static/js/main.ae935200.chunk.js"
+    "static/js/runtime-main.b64e34f7.js",
+    "static/js/2.e1d07fa1.chunk.js",
+    "static/css/main.ccb22964.chunk.css",
+    "static/js/main.c19fd304.chunk.js"
   ]
 }
