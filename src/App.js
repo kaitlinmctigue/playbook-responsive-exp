@@ -4,6 +4,7 @@ import './styles/App.scss';
 
 import RowsVerticallyResponsive from './RowsVerticallyResponsive/RowsVerticallyResponsive';
 import RowsWithEventsFixedHeight from './RowsWithEventsFixedHeight/RowsWithEventsFixedHeight';
+import VerticallyResponsiveForReal from './VerticallyResponsiveForReal/VerticallyResponsiveForReal';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -25,7 +26,10 @@ function App() {
                           <Link to={'/'}>Custom Height</Link>
                       </Nav>
                       <Nav>
-                          <Link to={'/test'}>Fixed Event Height</Link>
+                          <Link to={'/fixed-height'}>Fixed Event Height</Link>
+                      </Nav>
+                      <Nav>
+                          <Link to={'/vertically-responsive'}>Vertically Responsive</Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -37,7 +41,8 @@ function App() {
           {/*<RowsWithEventsFixedHeight/>*/}
 
           <Route exact path="/" component={RowsVerticallyResponsive} />
-          <Route path="/test" component={RowsWithEventsFixedHeight} />
+          <Route path="/fixed-height" component={RowsWithEventsFixedHeight} />
+          <Route path="/vertically-responsive" component={VerticallyResponsiveForReal} />
 
       </Router>
     </div>

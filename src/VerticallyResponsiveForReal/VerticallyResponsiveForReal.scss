@@ -1,0 +1,23 @@
+.VerticallyResponsiveForReal {
+  margin-top: 50px;
+  .EventsRow {
+    height: auto;
+
+    .event {
+      //height: 65px;
+      //max-height: 65px;
+
+      .desc {
+        //truncate with ellipsis
+        max-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .actions {
+        margin-bottom: .25em;
+      }
+    }
+  }
+}
